@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8300223ac71235e4d9af82244efb3773, type: 3}
+  m_Name: Player
+  m_EditorClassIdentifier: 
+  name: "\uFF48"
+  maxHP: 36
+  at: 4
+  defence: 2
+  magicPoint: 1200
+  exp: 0
+  dropGold: 0
+  sprite: {fileID: -1165608267, guid: 8485945d52c443a4d8775c72179b9a7b, type: 3}
+  lernableMoves:
+  - moveBase: {fileID: 11400000, guid: c1d5226360c4e104dbf84be687c3db5f, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: ab470948019cb734abd1faa2c6f70e3a, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 192f77655ce4d0f45ab10b38360c1200, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: e5ccd80654bfd274f9a20a6fe77e9253, type: 2}
+    level: 11
+  - moveBase: {fileID: 11400000, guid: e5ccd80654bfd274f9a20a6fe77e9253, type: 2}
+    level: 11
+  - moveBase: {fileID: 11400000, guid: 40b1842eae64611488091439b04a5aaa, type: 2}
+    level: 0
+  - moveBase: {fileID: 11400000, guid: 6d37af6c199b08a4098978d75128edbf, type: 2}
+    level: 0
+  - moveBase: {fileID: 11400000, guid: 9f34f11cb9cfc3e48b3f1feba5dbce6a, type: 2}
+    level: 0
+  - moveBase: {fileID: 11400000, guid: 9a74877edfa379741858a542a7772184, type: 2}
+    level: 0

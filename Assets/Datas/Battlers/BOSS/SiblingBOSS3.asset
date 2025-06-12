@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bf96544219093140a5b60194a32ab00, type: 3}
+  m_Name: SiblingBOSS3
+  m_EditorClassIdentifier: 
+  name: "\u9996\u72E9\u308A\u306E\u30B8\u30E7\u30FC\u30B8\u672B"
+  maxHP: 9
+  at: 0
+  defence: 0
+  exp: 0
+  dropGold: 0
+  sprite: {fileID: 21300000, guid: fb3c47d961fbc5241beb96e1e03b1835, type: 3}
+  lernableMoves:
+  - moveBase: {fileID: 11400000, guid: c45d3f299d07a0147a29e26db432ff5b, type: 2}
+    level: 0
+  - moveBase: {fileID: 11400000, guid: d52315c86b8e91044ad704ed6683170a, type: 2}
+    level: 0
+  suitableLevel: 0
+  bossDialogContent:
+  - 
+  - "\u3046\u3046\u3046\u3046"
+  - "\u30D0\u30FC\u30AB\u30D0\u30FC\u30AB\u3001\u3042\u3093\u305F\u306F\u5927\u99AC\u9E7F\u3060\u30FC\u3044"
+  - "\u5144\u8CB4\u3043\uFF5E"
+  bossIndex: 3

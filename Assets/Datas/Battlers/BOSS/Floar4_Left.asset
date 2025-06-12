@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bf96544219093140a5b60194a32ab00, type: 3}
+  m_Name: Floar4_Left
+  m_EditorClassIdentifier: 
+  name: "\u60AA\u970A"
+  maxHP: 5
+  at: 2
+  defence: 0
+  exp: 0
+  dropGold: 0
+  sprite: {fileID: 21300000, guid: 774e54bb8a106d148881c91ac35137c3, type: 3}
+  lernableMoves:
+  - moveBase: {fileID: 11400000, guid: d52315c86b8e91044ad704ed6683170a, type: 2}
+    level: 0
+  - moveBase: {fileID: 11400000, guid: c5db5b81b1badd94f80338e3ed6d683b, type: 2}
+    level: 0
+  - moveBase: {fileID: 11400000, guid: 192f77655ce4d0f45ab10b38360c1200, type: 2}
+    level: 0
+  suitableLevel: 0
+  bossDialogContent:
+  - "\u52C7\u8005\u3088"
+  - "\u5B58\u5206\u306B\u697D\u3057\u307E\u305B\u3066\u3082\u3089\u3046\u305E!!"
+  - "\u304A\u524D\u306E\u529B\u898B\u3057\u3066\u3082\u3089\u304A\u3046!"
+  - "\u304A\u306E\u308C...\u52C7\u8005..."
+  - "\u3050\u308F\u3041\u3041\u3041\u3041....\u697D\u3057\u307F\u306F\u3053\u308C\u304B\u3089\u3060!!"
+  bossIndex: 1

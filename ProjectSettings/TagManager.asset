@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Grid
+  - Murabito
+  - CasleFloar4
+  - Floar4Ground
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - SolidObject
+  - Water
+  - UI
+  - Background
+  - Town
+  - IntheTown
+  - Brighe
+  - SimbolEnemy
+  - Inn
+  - Player
+  - Murabito1
+  - Murabito2
+  - Cave1
+  - 
+  - ExitCavePoint1
+  - Church
+  - Cave1Boss
+  - 
+  - 
+  - Town1
+  - NextGround1BOSS
+  - Murabito3
+  - Murabito4
+  - LastScene
+  - 
+  - FloarBoss1
+  - FloarBoss2
+  - FloarBOSS3
+  - FloarBOSS4
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 171438779
+    locked: 0
+  - name: Murabito
+    uniqueID: 1012682491
+    locked: 0
+  - name: SolidObject
+    uniqueID: 2233815935
+    locked: 0
+  - name: Town
+    uniqueID: 1487834467
+    locked: 0
+  - name: Actor
+    uniqueID: 2286218415
+    locked: 0

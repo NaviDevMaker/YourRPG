@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bf96544219093140a5b60194a32ab00, type: 3}
+  m_Name: Cave1Boss
+  m_EditorClassIdentifier: 
+  name: "\u5606\u304D\u306E\u7ADC"
+  maxHP: 300
+  at: 12
+  defence: 12
+  exp: 0
+  dropGold: 0
+  sprite: {fileID: 21300000, guid: 8b7f34e9801b52a49be79a6464559865, type: 3}
+  lernableMoves:
+  - moveBase: {fileID: 11400000, guid: d52315c86b8e91044ad704ed6683170a, type: 2}
+    level: 0
+  - moveBase: {fileID: 11400000, guid: c5db5b81b1badd94f80338e3ed6d683b, type: 2}
+    level: 0
+  suitableLevel: 20
+  bossDialogContent:
+  - "\u60B2\u3057\u3044\u306A\u3041...\u60B2\u3057\u3044\u306A\u3041\u30FB\u30FB\u30FB"
+  - "\u3050\u3049...\u3050\u3049...\u3050\u3049\u3049\u3049\u3049!!!"

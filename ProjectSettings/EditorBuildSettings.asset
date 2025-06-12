@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/FirstStage/Ground.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/FirstStage/Town.unity
+    guid: b258cd8fb18d6464098579a0ad1d8a3f
+  - enabled: 1
+    path: Assets/Scenes/Inn.unity
+    guid: 39bbc370093192b4fb203011d7e6d489
+  - enabled: 1
+    path: Assets/Scenes/Cave1/Cave1.unity
+    guid: 743d66c029894ff47918fa61a9e1b23e
+  - enabled: 1
+    path: Assets/Scenes/FirstStage/Church.unity
+    guid: 2613a1d98679de94b94576d62dda9a3d
+  - enabled: 1
+    path: Assets/Scenes/NextStage1/NextGround.unity
+    guid: c4ab7fba0f401654ba7a842d1a38bcab
+  - enabled: 1
+    path: Assets/Scenes/NextStage1/Town1.unity
+    guid: f1f8525629910fe44bdd67ef84d07e0d
+  - enabled: 1
+    path: Assets/Scenes/Cave1/SecondFloar.unity
+    guid: d83fe3b81cc03284090ad89c51facc57
+  - enabled: 1
+    path: Assets/Scenes/NextStage1/LastStage.unity
+    guid: ab8d2a57473ed9f40b8f416c60c05d68
+  - enabled: 1
+    path: Assets/Scenes/FirstStage/ItemShop.unity
+    guid: 4cf70bfb8b91cf043ab40ddd18a23341
+  - enabled: 1
+    path: Assets/Scenes/FirstStage/WeponStore.unity
+    guid: 53e2e545923e3ff46bd7de6a430dbb68
+  - enabled: 1
+    path: Assets/Scenes/NextStage1/IntheCasle/CasleFloar1.unity
+    guid: b089e2d296a52034ea6ff9cc80163006
+  - enabled: 1
+    path: Assets/Scenes/NextStage1/IntheCasle/CasleFloar2.unity
+    guid: 090b21d049d89f54dbafde1fcf391ea4
+  - enabled: 1
+    path: Assets/Scenes/NextStage1/IntheCasle/CasleFloar3.unity
+    guid: 1064b54410e5b844bae852edceace5a5
+  - enabled: 1
+    path: Assets/Scenes/NextStage1/IntheCasle/CasleFloar4.unity
+    guid: 714eac2529101364e98d9175de8a159e
+  - enabled: 1
+    path: Assets/Scenes/Endroll.unity
+    guid: 2b011eec31746f94cb4900ee61fd7759
+  m_configObjects: {}

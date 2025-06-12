@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bf96544219093140a5b60194a32ab00, type: 3}
+  m_Name: Floar1
+  m_EditorClassIdentifier: 
+  name: "\u30C0\u30FC\u30AF\u30B9\u30E9\u30F3\u30B5\u30FC"
+  maxHP: 1200
+  at: 80
+  defence: 50
+  exp: 0
+  dropGold: 0
+  sprite: {fileID: 21300000, guid: 004f6ec867202d148ab2c70e932edee7, type: 3}
+  lernableMoves:
+  - moveBase: {fileID: 11400000, guid: d52315c86b8e91044ad704ed6683170a, type: 2}
+    level: 0
+  - moveBase: {fileID: 11400000, guid: c5db5b81b1badd94f80338e3ed6d683b, type: 2}
+    level: 0
+  suitableLevel: 0
+  bossDialogContent:
+  - "\u672C\u6765\u306F\u547C\u3070\u308C\u306A\u3044\u3088"
+  - "\u79C1\u306E\u524D\u3067\u3072\u308C\u4F0F\u3059\u306E\u3088\u3049"

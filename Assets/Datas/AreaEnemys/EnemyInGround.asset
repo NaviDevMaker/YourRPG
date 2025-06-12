@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e9fa9375c139549946020602f61eb6, type: 3}
+  m_Name: EnemyInGround
+  m_EditorClassIdentifier: 
+  simpleEnemys:
+  - _base: {fileID: 11400000, guid: 4afd298f0a59b2a4c9e5436a1e43a4cf, type: 2}
+    _bossBase: {fileID: 0}
+    level: 0
+    MAX_Level: 0
+    haveGold: 0
+  - _base: {fileID: 11400000, guid: 4bf2ae11a9672f0418398853c6a8741d, type: 2}
+    _bossBase: {fileID: 0}
+    level: 0
+    MAX_Level: 0
+    haveGold: 0
+  - _base: {fileID: 11400000, guid: 26dcd0cf2f6631a4f958cc81d7a01e75, type: 2}
+    _bossBase: {fileID: 0}
+    level: 0
+    MAX_Level: 0
+    haveGold: 0
+  rareEnemys:
+  - _base: {fileID: 11400000, guid: 94540254ee65ab842a87cbb2b3ff8ac0, type: 2}
+    _bossBase: {fileID: 0}
+    level: 0
+    MAX_Level: 0
+    haveGold: 0

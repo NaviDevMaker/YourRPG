@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78ae1b0f3714104eb4670a1c2a9f28a, type: 3}
+  m_Name: WeponList
+  m_EditorClassIdentifier: 
+  townSellledWepons:
+  - {fileID: 11400000, guid: 3b82e2d5264751c48bc64de95cd51205, type: 2}
+  town1SelledWepons:
+  - {fileID: 11400000, guid: aab13cf4facca9c4a81bb5e81fc2c665, type: 2}

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e9fa9375c139549946020602f61eb6, type: 3}
+  m_Name: Floar2
+  m_EditorClassIdentifier: 
+  simpleEnemys:
+  - _base: {fileID: 11400000, guid: 1b4aa8bab1384c84098b00103f0fdefc, type: 2}
+    _bossBase: {fileID: 0}
+    level: 0
+    MAX_Level: 0
+    haveGold: 0
+  - _base: {fileID: 11400000, guid: 8ab2bd9f35314e14586af8ad25b3bf0a, type: 2}
+    _bossBase: {fileID: 0}
+    level: 0
+    MAX_Level: 0
+    haveGold: 0
+  - _base: {fileID: 11400000, guid: 367839f684554d649b25cdb911db750f, type: 2}
+    _bossBase: {fileID: 0}
+    level: 0
+    MAX_Level: 0
+    haveGold: 0
+  - _base: {fileID: 11400000, guid: f7074638ca0cf534696f3a8702d4a3ae, type: 2}
+    _bossBase: {fileID: 0}
+    level: 0
+    MAX_Level: 0
+    haveGold: 0
+  rareEnemys: []
