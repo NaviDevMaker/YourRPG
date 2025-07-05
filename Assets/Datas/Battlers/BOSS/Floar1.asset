@@ -16,8 +16,9 @@ MonoBehaviour:
   maxHP: 1200
   at: 80
   defence: 50
-  exp: 0
-  dropGold: 0
+  magicPoint: 0
+  exp: 1500
+  dropGold: 1000
   sprite: {fileID: 21300000, guid: 004f6ec867202d148ab2c70e932edee7, type: 3}
   lernableMoves:
   - moveBase: {fileID: 11400000, guid: d52315c86b8e91044ad704ed6683170a, type: 2}
@@ -28,3 +29,4 @@ MonoBehaviour:
   bossDialogContent:
   - "\u672C\u6765\u306F\u547C\u3070\u308C\u306A\u3044\u3088"
   - "\u79C1\u306E\u524D\u3067\u3072\u308C\u4F0F\u3059\u306E\u3088\u3049"
+  bossIndex: 0

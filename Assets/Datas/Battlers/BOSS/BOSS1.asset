@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: BOSS1
   m_EditorClassIdentifier: 
   name: "\u756A\u4EBA\u30B8\u30E3\uFF5E\u9B54"
-  maxHP: 9
+  maxHP: 100
   at: 25
   defence: 0
+  magicPoint: 0
   exp: 175
   dropGold: 100
   sprite: {fileID: 21300000, guid: 810ddf8bfa5b0654eb114ba43a60a0a1, type: 3}

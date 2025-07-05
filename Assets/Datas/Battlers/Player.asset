@@ -16,7 +16,7 @@ MonoBehaviour:
   maxHP: 36
   at: 4
   defence: 2
-  magicPoint: 1200
+  magicPoint: 15
   exp: 0
   dropGold: 0
   sprite: {fileID: -1165608267, guid: 8485945d52c443a4d8775c72179b9a7b, type: 3}

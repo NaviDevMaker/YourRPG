@@ -198,7 +198,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2061151361
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 1.4047619, y: 1.4047619, z: 0}
@@ -491,7 +491,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1012682491
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -1425876035, guid: d11496cdc01d05540b9540b79ca4530a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -567,7 +567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -802,7 +802,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1012682491
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -1425876035, guid: d11496cdc01d05540b9540b79ca4530a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1923,7 +1923,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!95 &1991646997
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1940,8 +1940,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1991646998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1960,92 +1959,7 @@ MonoBehaviour:
     level: 1
     MAX_Level: 99
     haveGold: 0
-  OpenSceneBases:
-  - tipImage: {fileID: 0}
-    LoadAnim: {fileID: 0}
-    sceneName: Town
-    fade: {fileID: 0}
-    texts:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    bounceDuration: 1
-    posY: -500
-  - tipImage: {fileID: 0}
-    LoadAnim: {fileID: 0}
-    sceneName: Ground
-    fade: {fileID: 0}
-    texts:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    bounceDuration: 1
-    posY: -500
-  - tipImage: {fileID: 0}
-    LoadAnim: {fileID: 0}
-    sceneName: Inn
-    fade: {fileID: 0}
-    texts:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    bounceDuration: 1
-    posY: -500
-  - tipImage: {fileID: 0}
-    LoadAnim: {fileID: 0}
-    sceneName: Cave1
-    fade: {fileID: 0}
-    texts:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    bounceDuration: 1
-    posY: -500
-  - tipImage: {fileID: 0}
-    LoadAnim: {fileID: 0}
-    sceneName: Church
-    fade: {fileID: 0}
-    texts:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    bounceDuration: 1
-    posY: -500
+  openSceneBases: []
   enterIndex: 0
   getBossLayer:
     serializedVersion: 2
@@ -2090,7 +2004,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2008748881
-  m_SortingLayer: 2
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1165608267, guid: 8485945d52c443a4d8775c72179b9a7b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

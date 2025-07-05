@@ -71,7 +71,7 @@ public class ChangeSceneBase
             changeSceneBase.TipImage.gameObject.SetActive(true);
             changeSceneBase.Texts[i].gameObject.SetActive(true);
             int BouncePos = PosY - 25;//ˆÚ“®‚·‚éˆÊ’u‚ÌPos.Y
-            changeSceneBase.Texts[i].rectTransform.anchoredPosition = new Vector2((i - changeSceneBase.Texts.Count / 2) * 25 + 800, PosY);
+            changeSceneBase.Texts[i].rectTransform.anchoredPosition = new Vector2((i - changeSceneBase.Texts.Count / 2) * 25 + 670, PosY);//800
             Sequence sequence = DOTween.Sequence()
                 .SetLoops(-1, LoopType.Restart)
                 .SetDelay((bounceDuration / 2) * ((float)i / changeSceneBase.Texts.Count))

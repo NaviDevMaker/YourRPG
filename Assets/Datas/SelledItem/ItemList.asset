@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   townselledItems:
   - {fileID: 11400000, guid: 6e3bfcd6919b509408759884cf2f10d1, type: 2}
-  town1SelledItems:
   - {fileID: 11400000, guid: 703a5cb34ab1e584d972cecfb0796eae, type: 2}
+  town1SelledItems:
+  - {fileID: 11400000, guid: 6e3bfcd6919b509408759884cf2f10d1, type: 2}
+  - {fileID: 11400000, guid: 703a5cb34ab1e584d972cecfb0796eae, type: 2}
+  - {fileID: 11400000, guid: b88dd0bf23f01c74b9f36b8fec6d741d, type: 2}

@@ -317,7 +317,7 @@ public class BattleSystem : MonoBehaviour
                 }
                 else//通常の戦闘の場合
                 {
-                    int ratioEscape = 1;  //int ratioEscape = Random.Range(0, 3);//Random.Range(0, 3);//終了値は含まないため3,2/3は逃げたいから
+                    int ratioEscape = Random.Range(0, 3);  //int ratioEscape = Random.Range(0, 3);//Random.Range(0, 3);//終了値は含まないため3,2/3は逃げたいから
                     Debug.Log(ratioEscape);
                     if(ratioEscape == 1)
                     {

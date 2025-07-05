@@ -15,7 +15,8 @@ MonoBehaviour:
   name: "\u30EC\u30C3\u30C9\u30F3"
   maxHP: 25
   at: 7
-  defence: 0
+  defence: 2
+  magicPoint: 0
   exp: 7
   dropGold: 5
   sprite: {fileID: 21300000, guid: b5292b77191e08845bfd8115afc8eb42, type: 3}

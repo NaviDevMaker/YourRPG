@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Floar4_Left
   m_EditorClassIdentifier: 
   name: "\u60AA\u970A"
-  maxHP: 5
-  at: 2
-  defence: 0
-  exp: 0
-  dropGold: 0
+  maxHP: 2500
+  at: 100
+  defence: 100
+  magicPoint: 0
+  exp: 5000
+  dropGold: 3000
   sprite: {fileID: 21300000, guid: 774e54bb8a106d148881c91ac35137c3, type: 3}
   lernableMoves:
   - moveBase: {fileID: 11400000, guid: d52315c86b8e91044ad704ed6683170a, type: 2}

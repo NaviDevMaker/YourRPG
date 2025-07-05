@@ -30,6 +30,9 @@ public class MainAudio : AudioBase
 
         AudioSource.loop = true;
         SceneManager.sceneLoaded += OnSceneLoaded;
+        int mainSceneIndex = SceneNames.IndexOf("Ground");
+        AudioSource.clip = AudioClips[mainSceneIndex];
+        AudioSource.Play();
 
     }
 

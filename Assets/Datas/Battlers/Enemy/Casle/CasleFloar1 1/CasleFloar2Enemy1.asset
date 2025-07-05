@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: CasleFloar2Enemy1
   m_EditorClassIdentifier: 
   name: "\u3044"
-  maxHP: 5
-  at: 0
-  defence: 0
-  exp: 0
-  dropGold: 0
+  maxHP: 450
+  at: 30
+  defence: 15
+  magicPoint: 0
+  exp: 1000
+  dropGold: 180
   sprite: {fileID: 21300000, guid: 3b86887f382fe714685c988f1ddbf8b3, type: 3}
   lernableMoves:
   - moveBase: {fileID: 11400000, guid: d52315c86b8e91044ad704ed6683170a, type: 2}

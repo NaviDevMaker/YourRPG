@@ -1554,7 +1554,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleAudio: {fileID: 1860685022}
-  fade: {fileID: 1448265987}
   sceneObjectManager: {fileID: 1948776510}
   player: {fileID: 189718793}
   battleSystem: {fileID: 941725586}
@@ -14682,6 +14681,7 @@ MonoBehaviour:
   HPText: {fileID: 143321320}
   atText: {fileID: 1095091551}
   ExText: {fileID: 601739419}
+  mPText: {fileID: 0}
 --- !u!114 &1048300561
 MonoBehaviour:
   m_ObjectHideFlags: 0
