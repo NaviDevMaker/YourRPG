@@ -188,7 +188,7 @@ public class BattleSystem : MonoBehaviour
         if (state == State.BattleOver)
         {
             yield return battleDialog.TypeDialog($"{playerUnit.Battler.Base.Name}ÇÕì|Ç≥ÇÍÇΩÅI",auto:false );
-
+            MainAudio.Instance.PlayerDeadAction();
             isDieidPlayer = true;
             isDefeat = false;
             BattleOver();

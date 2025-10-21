@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: MostHealItem
   m_EditorClassIdentifier: 
   name: "\u7279\u85AC\u8349"
-  prace: 0
+  prace: 150
   healType: 0
-  itemheal: 0
+  itemheal: 200

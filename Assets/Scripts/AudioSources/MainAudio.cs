@@ -7,6 +7,7 @@ public class MainAudio : AudioBase
 {
     public static MainAudio Instance { get; private set;}
 
+    [SerializeField] AudioClip churchAudio;
     //[SerializeField] AudioSource mainAudioSource;
     //[SerializeField] List<AudioClip> MainAudios;//メインのオウディオを格納
     //[SerializeField] List<string> mainSceneNames;//シーン遷移時にオウディオを変更するため
@@ -33,9 +34,14 @@ public class MainAudio : AudioBase
         int mainSceneIndex = SceneNames.IndexOf("Ground");
         AudioSource.clip = AudioClips[mainSceneIndex];
         AudioSource.Play();
-
     }
 
+    public void PlayerDeadAction()
+    {
+        AudioSource.Stop();
+        AudioSource.clip = churchAudio;
+        AudioSource.Play();
+    }
     //シーン遷移時にオウディオを変更
     public override void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {

@@ -27,7 +27,7 @@ public class StatusUI : BelongingUIBase
         AppearTexts[0].text = player.Battler.Base.Name;
         AppearTexts[1].text = $"Lv.{player.Battler.Level}";
         AppearTexts[2].text = $"HP:{player.Battler.HP} / {player.Battler.MaxHP}";
-        if(player.Battler.HP <= player.Battler.MaxHP / 8) AppearTexts[1].color = Color.red;
+        if(player.Battler.HP <= player.Battler.MaxHP / 8) AppearTexts[2].color = Color.red;
         else if(player.Battler.HP >= (player.Battler.MaxHP / 8) + 1) AppearTexts[2].color = Color.white;
         AppearTexts[3].text = $"AT:{player.Battler.AT}";
         AppearTexts[4].text = $"MP:{player.Battler.MagicPoint}";

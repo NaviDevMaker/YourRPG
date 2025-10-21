@@ -22,20 +22,20 @@ MonoBehaviour:
   sprite: {fileID: -1165608267, guid: 8485945d52c443a4d8775c72179b9a7b, type: 3}
   lernableMoves:
   - moveBase: {fileID: 11400000, guid: c1d5226360c4e104dbf84be687c3db5f, type: 2}
-    level: 1
+    level: 0
   - moveBase: {fileID: 11400000, guid: ab470948019cb734abd1faa2c6f70e3a, type: 2}
-    level: 1
+    level: 10
   - moveBase: {fileID: 11400000, guid: 192f77655ce4d0f45ab10b38360c1200, type: 2}
-    level: 1
+    level: 15
   - moveBase: {fileID: 11400000, guid: e5ccd80654bfd274f9a20a6fe77e9253, type: 2}
-    level: 11
-  - moveBase: {fileID: 11400000, guid: e5ccd80654bfd274f9a20a6fe77e9253, type: 2}
-    level: 11
+    level: 25
   - moveBase: {fileID: 11400000, guid: 40b1842eae64611488091439b04a5aaa, type: 2}
-    level: 0
+    level: 15
   - moveBase: {fileID: 11400000, guid: 6d37af6c199b08a4098978d75128edbf, type: 2}
-    level: 0
+    level: 20
   - moveBase: {fileID: 11400000, guid: 9f34f11cb9cfc3e48b3f1feba5dbce6a, type: 2}
-    level: 0
+    level: 15
   - moveBase: {fileID: 11400000, guid: 9a74877edfa379741858a542a7772184, type: 2}
-    level: 0
+    level: 20
+  - moveBase: {fileID: 11400000, guid: 7a280941e7bc17c479e28587e39956bd, type: 2}
+    level: 30

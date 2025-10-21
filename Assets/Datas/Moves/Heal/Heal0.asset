@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a16e5671f1c573745811ed2f6c38feb9, type: 3}
   m_Name: Heal0
   m_EditorClassIdentifier: 
-  name: "\u30D9\u30DB\u30A4\u30DF"
-  magicPoint: 0
-  actionType: 1
-  heal: 8
+  name: "\u56DE\u5FA9\u306E\u7948\u308A"
+  magicPoint: 5
+  type: 1
+  heal: 30

@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 205923919a7e10f44beb45a1f7a8114a, type: 3}
-  m_Name: Attack0
+  m_Script: {fileID: 11500000, guid: a16e5671f1c573745811ed2f6c38feb9, type: 3}
+  m_Name: Heal2
   m_EditorClassIdentifier: 
-  name: "\u30AD\u30C3\u30AF"
-  magicPoint: 3
-  type: 0
-  power: 5
+  name: "\u7D76\u56DE\u5FA9\u306E\u7948\u308A"
+  magicPoint: 30
+  type: 1
+  heal: 240

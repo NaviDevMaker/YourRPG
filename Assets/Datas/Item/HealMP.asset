@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: HealMP
   m_EditorClassIdentifier: 
   name: "\u9B54\u6CD5\u306E\u6C34"
-  prace: 0
+  prace: 6
   healType: 1
   mpHeal: 30

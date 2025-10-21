@@ -364,7 +364,7 @@ public class ItemUI : BelongingUIBase
             catch (Exception ex)
             {
                 // エラーを無視してログを出力
-                Debug.LogError($"WearWepon の実行中にエラーが発生しました: {ex.Message}");
+                Debug.LogWarning($"WearWepon の実行中にエラーが発生しました: {ex.Message}");
             }
 
         }
