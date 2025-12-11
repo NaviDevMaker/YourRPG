@@ -1,9 +1,11 @@
+using Cysharp.Threading.Tasks;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameController : MonoBehaviour
+public class GameController : MonoBehaviour,ISavedData
 {
     //[SerializeField] 
     ChurchMurabito churchMurabito;
@@ -30,7 +32,7 @@ public class GameController : MonoBehaviour
 
     public static GameController Instance { get; private set; }
 
-   
+    DataController dataController = new DataController();
     private void Awake()//シングルトン
     {
         if(Instance == null)
@@ -49,8 +51,27 @@ public class GameController : MonoBehaviour
         fade = GameObject.FindObjectOfType<Fade>();
         specialBossBattle.InitBossInfo();
         SetEvents();
-       
-      
+        Application.quitting += SaveData;
+        LoadData();
+    }
+
+    void SaveData()
+    {
+        var objects = GameObject.FindObjectsOfType<MonoBehaviour>(includeInactive:true);
+        var savedDatas = objects.ToList()
+                        .Where(mono => mono is ISavedData)
+                        .Select(mono => mono.GetComponent<ISavedData>())
+                        .ToList();
+        dataController.SaveData(savedDatas);
+    }
+    void LoadData()
+    {
+        var objects = GameObject.FindObjectsOfType<MonoBehaviour>(includeInactive: true);
+        var savedDatas = objects.ToList()
+                        .Where(mono => mono is ISavedData)
+                        .Select(mono => mono.GetComponent<ISavedData>())
+                        .ToList();
+        dataController.LoadData(savedDatas).Forget();
     }
     void StartBattle(Battler enemyBattler)//エネミーの情報を取得し、バトルを開始
     {
@@ -232,5 +253,16 @@ public class GameController : MonoBehaviour
         SceneManager.LoadSceneAsync(sceneNameDatas.SceneNames[12]);
         yield return new WaitForSeconds(1.0f);
         yield return fade.FadeOut(1.0f);
+    }
+
+    public void Export(SaveData saveData)
+    {
+        saveData.sceneName = SceneManager.GetActiveScene().name;
+    }
+
+    public void Import(SaveData saveData)
+    {
+        var sceneName = saveData.sceneName;
+        SceneManager.LoadScene(sceneName);
     }
 }

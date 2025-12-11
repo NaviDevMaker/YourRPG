@@ -20,6 +20,7 @@ public class ItemUI : BelongingUIBase
     List<SelectableText> selectableTexts = new List<SelectableText>();//selectableTextを集める
     List<ItemMoveBase> previousItems = new List<ItemMoveBase>();//アイテムが一個目だった場合にその要素をいれるリスト
     string currentWeponName;
+    public string _currentWeponName { get => currentWeponName; set => currentWeponName = value;}
     public int selectedIndex { get; set; } = 0;
     int allCount = 0;//アイテムリスト内での選ばれたアイテムの場所
     public UnityAction<List<ItemMoveBase>,List<WeponBase>> OnClick_M_Item;

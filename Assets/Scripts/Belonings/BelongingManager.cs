@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BelongingManager : MonoBehaviour
+public class BelongingManager : MonoBehaviour,ISavedData
 {
     public static BelongingManager Instance { get;private set; }
     [SerializeField] GoldUI goldUI;
@@ -123,5 +123,20 @@ public class BelongingManager : MonoBehaviour
         }
     }
 
-   
+    public void Export(SaveData saveData)
+    {
+        saveData.currentWepons = storePlayerItems.CurrentWepons;
+        saveData.currentItems = storePlayerItems.CurrentItems;
+        saveData.currentWeponName = itemUI._currentWeponName != null
+                                    ? itemUI._currentWeponName
+                                    : "";
+    }
+
+    public void Import(SaveData saveData)
+    {
+        storePlayerItems.CurrentWepons = saveData.currentWepons;
+        storePlayerItems.CurrentItems = saveData.currentItems ;
+        itemUI._currentWeponName = saveData.currentWeponName;
+        goldUI.UpdateGoldUI();
+    }
 }

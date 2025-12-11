@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8300223ac71235e4d9af82244efb3773, type: 3}
   m_Name: CasleFloar1Enemy1
   m_EditorClassIdentifier: 
-  name: "\u3042"
+  name: "\u3058\u3093\u3081\u3093\u6A39"
   maxHP: 300
   at: 40
   defence: 15

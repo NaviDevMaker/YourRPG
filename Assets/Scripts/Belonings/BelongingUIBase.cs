@@ -12,7 +12,8 @@ public class BelongingUIBase : MonoBehaviour
     [SerializeField] protected List<Text> AppearTexts;
 
    protected bool opend = false;
-   
+
+    
     //ウィンドウの開閉
     public void OpenManage()
     {

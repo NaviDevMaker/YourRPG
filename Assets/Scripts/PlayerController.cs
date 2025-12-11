@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour,ISavedData
 {
     public static PlayerController Instance { get; private set; }
     
@@ -51,9 +51,7 @@ public class PlayerController : MonoBehaviour
         }
     }
     void Start()
-    {
-
-        
+    {      
         p_animator = GetComponent<Animator>();
         battler.Init(isEnemy:false);//BattlerにはPlayerのベースとなるスクリプタブルオブジェクトがアタッチされている。それらの値を集める。一度集めたらそれ以降別途で更新されていくので大丈夫
        
@@ -711,9 +709,35 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-    
 
+    public void Export(SaveData saveData)
+    {
+        saveData.playerPos = transform.position;
+        saveData.playerName = battler.Base.Name;
+        saveData.enterIndex = enterIndex;
+        saveData.maxHP = battler.MaxHP;
+        saveData.HP = battler.HP;
+        saveData.defence = battler.Defence;
+        saveData.aT = battler.AT;
+        saveData.magicPoint = battler.MagicPoint;
+        saveData.moves = battler.Moves;
+        saveData.gold = battler.HaveGold;
+        saveData.exp = battler.HasExp;
+    }
 
+    public void Import(SaveData saveData)
+    {
+        transform.position = saveData.playerPos;
+        battler.Base.Name = saveData.playerName;
+        enterIndex = saveData.enterIndex;
+        battler.MaxHP = saveData.maxHP;
+        battler.HP = saveData.HP;
+        battler.Defence = saveData.defence;
+        battler.AT = saveData.aT;
+        battler.Moves = saveData.moves;
+        battler.HaveGold = saveData.gold;
+        battler.HasExp = saveData.exp;
+    }
 }
 
 

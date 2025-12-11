@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf96544219093140a5b60194a32ab00, type: 3}
   m_Name: LastBoss
   m_EditorClassIdentifier: 
-  name: "\u30E9\u30B9\u30C8\u30DC\u30B9"
+  name: "\u30B7\u30E3\u30FC\u30D7\u30EC\u30E6"
   maxHP: 5000
   at: 100
   defence: 130
@@ -27,10 +27,10 @@ MonoBehaviour:
     level: 0
   suitableLevel: 0
   bossDialogContent:
-  - aaaaaaaa
-  - iiiiiiiiii
-  - uuuuu
-  - "\u304B\u304B\u3063\u304B\u304B\u304B\u3063\u304B"
-  - "\u304A\u306E\u306E\u306E\u3093"
-  - "\u3084\u3093\u3084\u3093\u3084\u3093"
+  - "\u3053\u306E\u611F\u899A\u306F\u3044\u3064\u3076\u308A\u3060\u308D\u3046\u304B..."
+  - "\u529B\u304C\u307F\u306A\u304E\u308B\u305E\uFF01\uFF01"
+  - "\u3055\u3042\u52C7\u8005\u3001\u30D5\u30A3\u30CA\u30FC\u30EC\u3068\u884C\u3053\u3046\u304B\uFF01\uFF01"
+  - "\u52DD\u3063\u305F\u8005\u3053\u305D\u304C\u6B63\u7FA9..."
+  - .........
+  - "\u3050\u3049\u3049\u3049\u3049\u3049\u3049\u3049\u3049\uFF01\uFF01\uFF01\uFF01\uFF01"
   bossIndex: 0

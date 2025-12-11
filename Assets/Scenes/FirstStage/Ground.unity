@@ -1373,7 +1373,7 @@ MonoBehaviour:
     level: 0
     MAX_Level: 0
     haveGold: 0
-  bossEncountCanvas: {fileID: 0}
+  bossEncountCanvas: {fileID: 1663039214}
 --- !u!114 &136591060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1945,7 +1945,7 @@ MonoBehaviour:
     level: 0
     MAX_Level: 0
     haveGold: 0
-  bossEncountCanvas: {fileID: 0}
+  bossEncountCanvas: {fileID: 1663039214}
 --- !u!1 &192799025
 GameObject:
   m_ObjectHideFlags: 0
@@ -6531,7 +6531,7 @@ MonoBehaviour:
     level: 0
     MAX_Level: 0
     haveGold: 0
-  bossEncountCanvas: {fileID: 0}
+  bossEncountCanvas: {fileID: 1663039214}
 --- !u!61 &917709045
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7287,7 +7287,7 @@ MonoBehaviour:
     level: 0
     MAX_Level: 0
     haveGold: 0
-  bossEncountCanvas: {fileID: 0}
+  bossEncountCanvas: {fileID: 1663039214}
 --- !u!66 &1022869722
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -7778,7 +7778,7 @@ MonoBehaviour:
     level: 0
     MAX_Level: 0
     haveGold: 0
-  bossEncountCanvas: {fileID: 0}
+  bossEncountCanvas: {fileID: 1663039214}
 --- !u!61 &1066939787
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8299,7 +8299,7 @@ MonoBehaviour:
     level: 0
     MAX_Level: 0
     haveGold: 0
-  bossEncountCanvas: {fileID: 0}
+  bossEncountCanvas: {fileID: 1663039214}
 --- !u!61 &1112354453
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9346,7 +9346,7 @@ MonoBehaviour:
     level: 0
     MAX_Level: 0
     haveGold: 0
-  bossEncountCanvas: {fileID: 0}
+  bossEncountCanvas: {fileID: 1663039214}
 --- !u!61 &1346744142
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10434,7 +10434,7 @@ MonoBehaviour:
     level: 0
     MAX_Level: 0
     haveGold: 0
-  bossEncountCanvas: {fileID: 0}
+  bossEncountCanvas: {fileID: 1663039214}
 --- !u!114 &1462120931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15599,7 +15599,7 @@ MonoBehaviour:
     level: 0
     MAX_Level: 0
     haveGold: 0
-  bossEncountCanvas: {fileID: 0}
+  bossEncountCanvas: {fileID: 1663039214}
 --- !u!19719996 &1615513987
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -16590,7 +16590,7 @@ MonoBehaviour:
     level: 0
     MAX_Level: 0
     haveGold: 0
-  bossEncountCanvas: {fileID: 0}
+  bossEncountCanvas: {fileID: 1663039214}
 --- !u!19719996 &1687131449
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -18340,7 +18340,7 @@ MonoBehaviour:
     level: 0
     MAX_Level: 0
     haveGold: 0
-  bossEncountCanvas: {fileID: 0}
+  bossEncountCanvas: {fileID: 1663039214}
 --- !u!114 &1939143008
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneObjectManager : MonoBehaviour
+public class SceneObjectManager : MonoBehaviour,ISavedData
 {
     //グリッド（ボス）を町などに入ったら非表示にする、その処理を一つのスクリプトで管理するため
     public static SceneObjectManager Instance { get; private set; }
@@ -63,6 +63,7 @@ public class SceneObjectManager : MonoBehaviour
         }
         //SceneManager.sceneLoaded += OnSceneLoaded; //シーンが戻ってきたときに再度アクティブ化
 
+        //GameManagerのLoadDataを呼び出す
     }
 
 
@@ -141,8 +142,13 @@ public class SceneObjectManager : MonoBehaviour
 
     }
 
-   
+    public void Export(SaveData saveData)
+    {
+        saveData.detectDefeat = DetectDefeat;
+    }
 
-
-
+    public void Import(SaveData saveData)
+    {
+        DetectDefeat = saveData.detectDefeat;
+    }
 }

@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8300223ac71235e4d9af82244efb3773, type: 3}
   m_Name: CasleFloar3Enemy3
   m_EditorClassIdentifier: 
-  name: "\u3046"
-  maxHP: 600
-  at: 60
-  defence: 30
+  name: "\u30D2\u30C8\u30CE\u30DF"
+  maxHP: 700
+  at: 50
+  defence: 20
   magicPoint: 0
-  exp: 1000
+  exp: 1200
   dropGold: 900
   sprite: {fileID: 21300000, guid: 9a983fdc951c6fd43924fc3188a9904d, type: 3}
   lernableMoves:

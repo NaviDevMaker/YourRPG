@@ -26,7 +26,7 @@ public class SiblingBossBattle: ISpecialBossHandler
         }
         return correctOrder;
     }
-
+    //順番が正しかったら無言、違ったら２のダイアログ
     public IEnumerator CheckSiblingBoss(int Index,SceneObjectManager sceneObjectManager)
     {
         Transform bossEncountCanvas = BossEncount.Instance.gameObject.transform;
@@ -36,7 +36,6 @@ public class SiblingBossBattle: ISpecialBossHandler
 
             if (EndBattleAtSiblingBoss())
             {
-                
                 if (siblingBossIndexs.Count == 3)
                 {
                     FloarToSecond_Casle floarTo = GameObject.FindObjectOfType<FloarToSecond_Casle>();

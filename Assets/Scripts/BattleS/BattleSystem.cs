@@ -38,6 +38,7 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] BattleUnit playerUnit;
     [SerializeField] BattleUnit enemyUnit;
 
+    public BattleUnit PlayerUnit => playerUnit;
     private void Awake()
     {
         if (Instance == null)

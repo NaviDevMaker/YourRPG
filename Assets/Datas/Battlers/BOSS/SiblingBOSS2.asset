@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: SiblingBOSS2
   m_EditorClassIdentifier: 
   name: "\u9996\u72E9\u308A\u306E\u30DE\u30A4\u30B1\u30EB\u6B21"
-  maxHP: 9
-  at: 0
-  defence: 0
-  exp: 0
-  dropGold: 0
+  maxHP: 900
+  at: 70
+  defence: 30
+  magicPoint: 0
+  exp: 2000
+  dropGold: 2000
   sprite: {fileID: 21300000, guid: fb3c47d961fbc5241beb96e1e03b1835, type: 3}
   lernableMoves:
   - moveBase: {fileID: 11400000, guid: d52315c86b8e91044ad704ed6683170a, type: 2}
@@ -28,5 +29,6 @@ MonoBehaviour:
   bossDialogContent:
   - 
   - "\u3044\u3044\u3044\u3044"
-  - "\u304F\u3063\u304F\u3063\u304F\u3063...\u306F\u3063\u306F\u3063\u306F\u3063"
+  - "\u30D0\u30FC\u30AB\u30D0\u30FC\u30AB\u3001\u3042\u3093\u305F\u306F\u5927\u99AC\u9E7F\u3060\u30FC\u3044"
+  - "\u9577\u7537\u3001\u4EFB\u305B\u305F\u3088\u3041\uFF5E"
   bossIndex: 2
