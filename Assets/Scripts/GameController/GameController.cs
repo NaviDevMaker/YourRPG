@@ -32,7 +32,6 @@ public class GameController : MonoBehaviour,ISavedData
 
     public static GameController Instance { get; private set; }
 
-    DataController dataController = new DataController();
     private void Awake()//シングルトン
     {
         if(Instance == null)
@@ -62,7 +61,7 @@ public class GameController : MonoBehaviour,ISavedData
                         .Where(mono => mono is ISavedData)
                         .Select(mono => mono.GetComponent<ISavedData>())
                         .ToList();
-        dataController.SaveData(savedDatas);
+        DataController.Instance.SaveData(savedDatas);
     }
     void LoadData()
     {
@@ -71,7 +70,7 @@ public class GameController : MonoBehaviour,ISavedData
                         .Where(mono => mono is ISavedData)
                         .Select(mono => mono.GetComponent<ISavedData>())
                         .ToList();
-        dataController.LoadData(savedDatas).Forget();
+        DataController.Instance.LoadData(savedDatas).Forget();
     }
     void StartBattle(Battler enemyBattler)//エネミーの情報を取得し、バトルを開始
     {

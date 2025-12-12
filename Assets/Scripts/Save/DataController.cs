@@ -10,10 +10,21 @@ public interface ISavedData
     void Import(SaveData saveData);
 }
 
-public class DataController
+public class DataController : MonoBehaviour
 {
+    public static DataController Instance { get; private set; }
     const string fileName = "save.json";
     string pass => Path.Combine(Application.persistentDataPath, fileName);
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else Destroy(this.gameObject);
+    }
     public void SaveData(List<ISavedData> savedDatas)
     {
         SaveData saveData = null;
@@ -36,4 +47,5 @@ public class DataController
         var savedData = JsonUtility.FromJson<SaveData>(json);
         savedDatas.ForEach(data => data.Import(savedData));
     }
+    public bool IsExistFile() => File.Exists(pass);
 }

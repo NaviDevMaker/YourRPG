@@ -124,14 +124,10 @@ public class ConfirmName : DialogBase
            
         }
     }
-
     public void ChangeActive(bool isActive)
     {
         dialogImage.gameObject.SetActive(false);
         selectOptionImage.gameObject.SetActive(false);
     }
-
-
-
 
 }

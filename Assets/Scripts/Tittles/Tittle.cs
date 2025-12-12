@@ -13,7 +13,7 @@ public class Tittle : MonoBehaviour
     [SerializeField] RectTransform fieldRect;
     [SerializeField] ConfirmName confirmName;
     [SerializeField] ChangeSceneBase changeSceneBase;
-
+    [SerializeField] Image continueImage;
     Vector2 originalScale;
     string playerName;
 
@@ -21,7 +21,18 @@ public class Tittle : MonoBehaviour
 
     private void Start()
     {
-        WaitingInput();
+        confirmName.ChangeActive(false);
+        if (DataController.Instance.IsExistFile())
+        {         
+            inputField.gameObject.SetActive(false);
+            continueImage.GetComponentInChildren<Text>().color = Color.yellow;
+            StartCoroutine(WaitContinue());
+        }
+        else
+        {
+            continueImage.gameObject.SetActive(false);
+            WaitingInput();
+        }
     }
     public void GetPlayerName()
     {
@@ -30,8 +41,6 @@ public class Tittle : MonoBehaviour
         inputField.interactable = false;
 
         StartCoroutine(ConfirmName());
-     
-
         
     }
 
@@ -72,4 +81,10 @@ public class Tittle : MonoBehaviour
         inputField.interactable = true;
     }
 
+    IEnumerator WaitContinue()
+    {
+        Debug.Log($"スペース待機");
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+        yield return changeSceneBase.ChangeScene(changeSceneBase);
+    }
 }
