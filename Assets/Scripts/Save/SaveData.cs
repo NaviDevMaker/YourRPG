@@ -15,10 +15,10 @@ public class SaveData
     public int aT;
     public int magicPoint;
     public double exp;
-    public List<Move> moves;
+    public List<string> moveNames = new List<string>();
     public bool[] detectDefeat = new bool[]{};
-    public List<WeponBase> currentWepons;
-    public List<ItemMoveBase> currentItems;
+    public List<string> currentWeponNames = new List<string>();
+    public List<string> currentItemNames = new List<string>();
     public int gold;
     public string currentWeponName;
 }

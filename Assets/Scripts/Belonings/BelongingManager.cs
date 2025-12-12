@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class BelongingManager : MonoBehaviour,ISavedData
@@ -125,8 +126,8 @@ public class BelongingManager : MonoBehaviour,ISavedData
 
     public void Export(SaveData saveData)
     {
-        saveData.currentWepons = storePlayerItems.CurrentWepons;
-        saveData.currentItems = storePlayerItems.CurrentItems;
+        saveData.currentWeponNames = storePlayerItems.CurrentWepons.Select(wepon => wepon.WeponName).ToList();
+        saveData.currentItemNames = storePlayerItems.CurrentItems.Select(item => item.Name).ToList();
         saveData.currentWeponName = itemUI._currentWeponName != null
                                     ? itemUI._currentWeponName
                                     : "";
@@ -134,8 +135,14 @@ public class BelongingManager : MonoBehaviour,ISavedData
 
     public void Import(SaveData saveData)
     {
-        storePlayerItems.CurrentWepons = saveData.currentWepons;
-        storePlayerItems.CurrentItems = saveData.currentItems ;
+        storePlayerItems.CurrentWepons = saveData.currentWeponNames.Select(name =>
+        {
+            return ItemAndWepons.Instance.AllWepons.FirstOrDefault(wepon => wepon.WeponName == name);
+        }).ToList();
+        storePlayerItems.CurrentItems = saveData.currentItemNames.Select(name =>
+        {
+            return ItemAndWepons.Instance.AllItems.FirstOrDefault(item => item.Name == name);
+        }).ToList();
         itemUI._currentWeponName = saveData.currentWeponName;
         goldUI.UpdateGoldUI();
     }

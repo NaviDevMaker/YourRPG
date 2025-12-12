@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using DG.Tweening;
-using System.Linq;//Directionaryを使うため
+using System.Linq;
+using Cysharp.Threading.Tasks;//Directionaryを使うため
 
 
 [System.Serializable]
@@ -35,7 +36,7 @@ public class ChangeSceneBase
     [SerializeField] GameObject LoadAnim;//テキストやチップイメージの親オブジェクト
         
     [SerializeField] string sceneName; //遷移先のシーンの名前
-    [SerializeField] Fade fade;//フェイドマネージャー
+    //[SerializeField] Fade fade;//フェイドマネージャー
     //[SerializeField] int sceneIndex;
     [SerializeField]  List<Text> texts;//アニメーションするテキスト
     [SerializeField]  float bounceDuration;
@@ -54,8 +55,22 @@ public class ChangeSceneBase
     //public List<string> GetCurrennScenes1 { get => getCurrennScenes; set => getCurrennScenes = value; }
     //public ChangeSceneBase ChangeBase { get => changeBase; set => changeBase = value; }
 
+    public async UniTask Initialize()
+    {
+        await UniTask.NextFrame();
+        if (LoadAnim == null) LoadAnim = GameObject.FindObjectOfType<LoadAnim>(includeInactive:true).gameObject;
+        if (texts == null || texts.Any(t => !t))
+        {
+            texts = LoadAnim.GetComponentsInChildren<Text>(includeInactive: true)
+                     .Where(text => !text.transform.parent.GetComponent<TipImage>())
+                     .OrderBy(text => text.transform.GetSiblingIndex())
+                     .ToList();
+        }
+        if (tipImage == null) tipImage = LoadAnim.GetComponentInChildren<Image>(includeInactive: true);
+    }
     public virtual IEnumerator ChangeScene(ChangeSceneBase changeSceneBase)//シーン遷移を実行
     {
+        
         IsChangeScene = true;
         Debug.Log(IsChangeScene);
         var randomKey = tipTextTipes.Keys.ElementAt(Random.Range(0, tipTextTipes.Count));
@@ -84,14 +99,14 @@ public class ChangeSceneBase
         }
         
         //フェードインのあとシーン遷移
-        fade.FadeIn(2f, () =>
+        Fade.Instance.FadeIn(2f, () =>
         {
            
             LoadAnim.gameObject.SetActive(false);
 
             SceneManager.LoadSceneAsync(changeSceneBase.SceneName).completed += (asyncOperation) =>
             {//SceneManager.LoadSceneAsync(changeSceneBase.SceneName);
-                fade.FadeOut(1.5f);
+                Fade.Instance.FadeOut(1.5f);
                 foreach (var seq in sequences)//シーン遷移後にも不要なアニメーションが残らないようにするため
                 {
                     seq.Kill();

@@ -1,5 +1,7 @@
+using Cysharp.Threading.Tasks;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -54,6 +56,7 @@ public class PlayerController : MonoBehaviour,ISavedData
     {      
         p_animator = GetComponent<Animator>();
         battler.Init(isEnemy:false);//BattlerにはPlayerのベースとなるスクリプタブルオブジェクトがアタッチされている。それらの値を集める。一度集めたらそれ以降別途で更新されていくので大丈夫
+        openSceneBases.ForEach(sceneBase => sceneBase.Initialize().Forget());
        
     }
 
@@ -720,7 +723,7 @@ public class PlayerController : MonoBehaviour,ISavedData
         saveData.defence = battler.Defence;
         saveData.aT = battler.AT;
         saveData.magicPoint = battler.MagicPoint;
-        saveData.moves = battler.Moves;
+        saveData.moveNames = battler.Moves.Select(move => move.Base.Name).ToList();
         saveData.gold = battler.HaveGold;
         saveData.exp = battler.HasExp;
     }
@@ -734,7 +737,12 @@ public class PlayerController : MonoBehaviour,ISavedData
         battler.HP = saveData.HP;
         battler.Defence = saveData.defence;
         battler.AT = saveData.aT;
-        battler.Moves = saveData.moves;
+        battler.Moves = saveData.moveNames.Select(name =>
+        {
+            var targetMove = default(Move);
+            var lernableMove = battler.Base.LernableMoves.FirstOrDefault(move => move.MoveBase.Name == name);
+            return targetMove = new Move(lernableMove.MoveBase);
+        }).ToList();
         battler.HaveGold = saveData.gold;
         battler.HasExp = saveData.exp;
     }

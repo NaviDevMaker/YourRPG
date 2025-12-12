@@ -19,7 +19,7 @@ MonoBehaviour:
   magicPoint: 0
   exp: 9999
   dropGold: 9999
-  sprite: {fileID: 21300000, guid: a60c57198fe0e384daa5de81d90a1040, type: 3}
+  sprite: {fileID: 21300000, guid: d4b5b71d4ed909d44b89f5609991593f, type: 3}
   lernableMoves:
   - moveBase: {fileID: 11400000, guid: c45d3f299d07a0147a29e26db432ff5b, type: 2}
     level: 0
